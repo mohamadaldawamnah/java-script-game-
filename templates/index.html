@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block main_content %}
+<h1> mo slam game </h1> 
+<p id = "text"> 
+</p>
+<section id = "inst"> 
+        <h2> Instruction: </h2>
+        <p class = "move"> use your keyboard arrows to move the charechtar  </p>
+        <p class = "mush"> after you kill a monster you can pick the mushroom by walking over it and that will increase your health and your speed and your damage will be higher</p>
+        <p class = "lead"> Your score will be stored in a scoreboard; </p>
+
+</section>
+<p> <a id="Starting" href="{{ url_for('play') }}">Start game </a></p> 
+<p> <a id="sta" href="{{ url_for('sb') }}">scoreboard </a></p> 
+
+
+{% endblock %}
